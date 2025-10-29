@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>🎂 生日快乐 🎉</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 登录页 -->
+  <div id="login" class="login-container">
+    <h2>🎁 请输入密码，进入专属生日惊喜 🎁</h2>
+    <input type="password" id="password" placeholder="请输入密码">
+    <button onclick="checkPassword()">进入</button>
+    <p id="error" class="error"></p>
+  </div>
+
+  <!-- 主页面 -->
+  <div id="main" class="hidden">
+    <canvas id="fireworks"></canvas>
+    <div class="content">
+      <h1 id="greeting">🎂 生日快乐 🎂</h1>
+      <p class="countdown" id="countdown"></p>
+
+      <div class="slider">
+        <img src="photo1.jpg" class="slide active">
+        <img src="photo2.jpg" class="slide">
+        <img src="photo3.jpg" class="slide">
+        <img src="photo4.jpg" class="slide">
+      </div>
+
+      <p class="wish" id="wish">愿你的生活像烟花一样绚烂，像笑容一样灿烂！</p>
+      <button onclick="playMusic()">播放音乐 🎵</button>
+      <audio id="music" src="happy.mp3"></audio>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
