@@ -11,7 +11,7 @@
   <div id="login" class="login-container">
     <h2>🎁 请输入密码，进入专属生日惊喜 🎁</h2>
     <input type="password" id="password" placeholder="请输入密码">
-    <button onclick="checkPassword()">进入</button>
+    <button id="enterBtn">进入</button>
     <p id="error" class="error"></p>
   </div>
 
@@ -23,15 +23,14 @@
       <p class="countdown" id="countdown"></p>
 
       <div class="slider">
-        <img src="photo1.jpg" class="slide active">
-        <img src="photo2.jpg" class="slide">
-        <img src="photo3.jpg" class="slide">
-        <img src="photo4.jpg" class="slide">
+        <img src="photo1.jpg" class="slide active" alt="生日照片1">
+        <img src="photo2.jpg" class="slide" alt="生日照片2">
+        <img src="photo3.jpg" class="slide" alt="生日照片3">
+        <img src="photo4.jpg" class="slide" alt="生日照片4">
       </div>
 
       <p class="wish" id="wish">愿你的生活像烟花一样绚烂，像笑容一样灿烂！</p>
-      <button onclick="playMusic()">播放音乐 🎵</button>
-      <audio id="music" src="happy.mp3"></audio>
+      <audio id="music" src="happy.mp3" loop></audio>
     </div>
   </div>
 
